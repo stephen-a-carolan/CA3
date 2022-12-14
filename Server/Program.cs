@@ -1,3 +1,4 @@
+using CA3.Server.Birth_day_info;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+
+builder.Services.AddScoped<IBirthdayServise, BirthdayServise>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
