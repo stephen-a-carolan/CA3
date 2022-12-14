@@ -15,5 +15,9 @@
     <ProjectReference Include="..\Shared\CA3.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 
 </Project>

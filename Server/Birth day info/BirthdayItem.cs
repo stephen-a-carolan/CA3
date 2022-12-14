@@ -1,8 +1,7 @@
-﻿namespace CA3.Server.Birth_day_info
+﻿namespace CA3.Server.Birth_day_info;
+
+public class BirthdayItem
 {
-    public class BirthdayItem
-    {
-        public string Name { get; set; }
-        public DateTime Date { get; set; }
-    }
+    public string Name { get; set; }
+    public DateTime Date { get; set; }
 }

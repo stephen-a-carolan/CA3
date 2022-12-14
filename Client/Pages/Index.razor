@@ -1,4 +1,5 @@
 ﻿@page "/"
+<!--
 @inject IBirthdayService BirthdayService
 <PageTitle>Reeling in the days</PageTitle>
 <h1>Reeling in the days</h1>
@@ -11,56 +12,57 @@
     {
         <table class="table">
             <thead>
-                <tr>
-                    <th>
-                        Name
-                    </th>
-                    <th>
-                        Birthday
-                    </th>
-                    <th>
-                        Age
-                    </th>
-                </tr>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Birthday
+                </th>
+                <th>
+                    Age
+                </th>
+            </tr>
             </thead>
             <tbody>
-                @foreach (var birthday in Dates)
-                {
-                    <tr>
-                        <td>
-                            @birthday.Name
-                        </td>
-                        <td>
-                            @birthday.Birthday
-                        </td>
-                        <td>
-                            @birthday.Age
-                        </td>
-                    </tr>
-                }
-                {
-                    <tr>
-                        <td>
-                            Dates.Name
-                        </td>
-                        <td>
-                            Dates.Birthday
-                        </td>
-                        <td>
-                            Dates.Age
-                        </td>
-                    </tr>
-                }
+            @foreach (var birthday in Dates)
+            {
+                <tr>
+                    <td>
+                        @birthday.Name
+                    </td>
+                    <td>
+                        @birthday.Birthday
+                    </td>
+                    <td>
+                        @birthday.Age
+                    </td>
+                </tr>
+            }
+            {
+            <tr>
+                <td>
+                    Dates.Name
+                </td>
+                <td>
+                    Dates.Birthday
+                </td>
+                <td>
+                    Dates.Age
+                </td>
+            </tr>
+            }
             </tbody>
         </table>
     }
-    
-    
-</div>
 
+
+</div>
+-->
 
 @code {
-    public List<Date> Dates { get; set; }
+    
+    /*public List<Date> Dates { get; set; }
     public string Error { get; set; }
 
     protected override async Task OnInitializedAsync()
@@ -74,4 +76,5 @@
             Error = e.Message;
         }
     }
+*/
 }

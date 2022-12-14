@@ -1,10 +1,9 @@
-﻿namespace CA3.Server.Birth_day_info
+﻿namespace CA3.Server.Birth_day_info;
+
+public interface IBirthdayServise
 {
-    public interface IBirthdayServise
-    {
-        void AddBirthday(BirthdayItem birthdayItem);
-        void DeleteBirthday(BirthdayItem birthdayItem);
-        void UpdateBirthday(BirthdayItem birthdayItem);
-        Task<List<BirthdayItem>> GetBirthdays();
-    }
+    void AddBirthday(BirthdayItem birthdayItem);
+    void DeleteBirthday(BirthdayItem birthdayItem);
+    void UpdateBirthday(BirthdayItem birthdayItem);
+    Task<List<BirthdayItem>> GetBirthdays();
 }
